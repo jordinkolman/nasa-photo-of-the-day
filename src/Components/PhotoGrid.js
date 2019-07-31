@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
-import { Container, Header, Icon } from 'semantic-ui-react'
+import { Container, Header, Icon, Segment } from 'semantic-ui-react'
 import DateSelector from './DateSelector.js'
 import PhotoCard from './PhotoCard.js'
 import PhotoCaption from './PhotoCaption.js'
@@ -38,10 +38,10 @@ export default function PhotoGrid() {
         return (
             <Container text textAlign ='center'>
                 <Header size='huge' block>
-                    <div>
+                    <Segment>
                         <Icon loading name='spinner' />
                         <Header.content>Loading...</Header.content>
-                    </div>
+                    </Segment>
                 </Header>
             </Container>
         )
